@@ -1,0 +1,20 @@
+spring:
+  dubbo:
+    application:
+      name: channel-endpoint
+    registry:
+      address: zookeeper://169.254.48.184:2181
+    scan: com.meetcity.payment
+  redis:
+      host: 192.168.209.140
+      password:
+      port: 6379
+      pool:
+        max-idle: 100
+        min-idle: 1
+        max-active: 1000
+        max-wait: -1
+logging:
+  level:
+    root: info
+    com.meetcity: debug

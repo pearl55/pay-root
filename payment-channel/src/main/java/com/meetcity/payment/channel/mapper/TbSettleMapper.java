@@ -1,0 +1,23 @@
+package com.meetcity.payment.channel.mapper;
+
+
+import com.meetcity.payment.core.model.batch.TbSettle;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
+
+/**
+ * Created by 朱梦光 on 2017/9/7.
+ */
+@Component
+@Mapper
+public interface TbSettleMapper {
+    /*
+      查询结算记录
+     */
+    List<TbSettle> selectSettleList(TbSettle settle);
+
+
+
+}
